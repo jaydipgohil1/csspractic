@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    background-color: rgb(255, 128, 0);
+    display: inline-block;
+    height: 300px;
+    text-align: center;
+}
+
+.main_layout {
+    background-color: aqua;
+    width: 100%;
+    height: 610px;
+}
+
+.top-left {
+    width: 49.80%;
+    background-color: deeppink;
+}
+.top-right{
+    background-color: rgb(121, 121, 231);
+}
+
+.top-left-sub {
+    width: 97%;
+    background-color: brown;
+    margin: 10px;
+    height: 280px;
+}
+
+.bottom-left {
+    width: 30%;
+}
+
+.bottom-left-sub {
+    width: 95%;
+    background-color: rgb(40, 232, 94);
+    margin: 10px;
+    height: 280px;
+}
+.bottom-right {
+    width: 69.60%;
+    background-color: rgb(114, 226, 131);
+
+}
+
+.bottom-right-sub-top {
+    width: 93%;
+    display: block;
+    padding: 10px;
+    background-color: rgb(212, 235, 136);
+    margin: 20px;
+    height: 100px;
+}
+.bottom-right-sub-bottom{
+    background-color: blue;
+}
