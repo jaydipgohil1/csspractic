@@ -47,5 +47,7 @@ div {
     border: 2px double red;
   }
   *{
-      padding:1vh;
+    padding:1vh;
+     margin: 7px;
+     border-radius: 5px;
   }
