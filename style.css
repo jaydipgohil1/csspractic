@@ -34,3 +34,18 @@ a{
     height: 50px;
     border: 5px solid blue;
 }
+.body{
+    /*margin-top: 2px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-left: 5px;*/
+    margin: auto;
+}
+div {
+    width: 300px;
+    margin: auto;
+    border: 2px double red;
+  }
+  *{
+      padding:1vh;
+  }
