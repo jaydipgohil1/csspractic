@@ -1,0 +1,13 @@
+
+.jaydip {
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    text-align: center;
+    border: 2px groove gray;
+    width: 100%;
+   letter-spacing: 5px;
+}
+p{
+    font-family:Copperplate, Papyrus, fantasy;
+}
