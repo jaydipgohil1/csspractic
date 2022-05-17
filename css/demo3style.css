@@ -3,7 +3,8 @@ body {
     padding-right: 0px;
     overflow: auto;
     overflow-x: hidden;
-    
+    box-sizing: border-box;
+
 }
 
 .jaydip {
@@ -11,7 +12,7 @@ body {
     font-family: 'Times New Roman', Times, serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 5px;
     text-align: left;
-    border: 2px groove gray;
+    border: 1px solid gray;
     width: 100%;
     letter-spacing: 5px;
     position: fixed;
@@ -24,7 +25,7 @@ body {
     font-family: 'Times New Roman', Times, serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 5px;
     text-align: center;
-    border: 2px groove gray;
+    border: 1px solid gray;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -36,19 +37,18 @@ p {
     font-family: "Sofia", sans-serif;
     margin-left: 10px;
 }
-
-a {
+a.menu{
     padding: 5px;
     background-color: #555;
     height: 25px;
     border-radius: 5px;
-    
-
 }
 
 :target {
     background-color: yellow;
     color: red;
+    border-radius: 5px;
+    padding: 1px;
 }
 
 a:link {
@@ -71,7 +71,7 @@ a:active {
 }
 
 h1 {
-    background-color: rgb(225, 153, 64);
+    background-color: lightblue;
 }
 
 ul {
@@ -84,18 +84,43 @@ ul {
     top: 8.50%;
     background-color: white;
     margin-top: 0px;
-
 }
 
 li {
     display: inline-flex;
     font-weight: bold;
     font-size: larger;
-
 }
-.main{
+
+.main {
     margin-top: 9%;
     margin-bottom: 5%;
     margin-right: 5px;
-
 }
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    margin-bottom: 3%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .jaydip, .footer,.main,ul,li {
+      width: 100%;
+    }
+  }
