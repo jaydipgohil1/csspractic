@@ -1,0 +1,141 @@
+body {
+    margin: 0px;
+    padding-right: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+}
+
+.header {
+
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 100%;
+
+}
+
+.header_circle {
+    height: 25px;
+    width: 25px;
+    background-color: coral;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.left_header {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0px 0px 10px;
+}
+
+.right_sub_header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 12px 10px 0px 0px;
+
+}
+
+.main_right {
+    width: 100%;
+}
+
+.profile_pic {
+    height: 25px;
+    width: 25px;
+}
+
+div a {
+    font-family: Helvetica;
+    text-decoration: none;
+    color: black;
+    opacity: 75%;
+    font-weight: bold;
+
+}
+
+
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.menu {
+
+    font-size: 11px;
+    font-weight: normal;
+}
+
+hr {
+    margin-top: 2%;
+
+}
+
+.top-right {
+    display: inline-block;
+}
+
+
+p h1 h3 {
+    margin: auto;
+    opacity: 0.5;
+}
+
+.main_contain {
+    text-align: center;
+    opacity: 0.60;
+    font-family: Helvetica;
+}
+
+.item_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.item {
+
+    height: 270px;
+    width: 18%;
+    display: flexbox;
+    text-align: center;
+    background-color: rgb(240, 234, 227);
+    opacity: 0.5;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px groove rgb(240, 234, 227);
+
+}
+
+.item_pic {
+    border-radius: 50%;
+    height: 120x;
+    width: 120px;
+    margin-top: 20px;
+
+}
+
+h2 {
+    opacity: 0.6;
+    font-weight: normal;
+    font-family: Helvetica;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+h2 {
+    text-align: center;
+}

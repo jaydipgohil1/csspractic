@@ -90,10 +90,12 @@ li {
     display: inline-flex;
     font-weight: bold;
     font-size: larger;
+    margin-bottom: 2px;
+    width:fit-content !important;
 }
 
 .main {
-    margin-top: 9%;
+    margin-top: 10% !important;
     margin-bottom: 5%;
     margin-right: 5px;
 }
@@ -119,8 +121,24 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-@media screen and (max-width: 600px) {
-    .jaydip, .footer,.main,ul,li {
+.all-radius
+{
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    background: #73AD21;
+}
+#rcorners1 {
+    border-radius: 50px / 15px;
+  }
+  #rcorners2 {
+    border-radius: 15px / 50px; 
+  }
+  #rcorners3 {
+    border-radius: 50%;
+  }
+@media screen and (max-width: 500px) {
+    .jaydip, .footer,.main,ul,li,.all-radius {
       width: 100%;
     }
   }
