@@ -1,0 +1,16 @@
+jaydipgohil1/next-technology
+git remote add origin https://github.com/jaydipgohil1/next-technology.git
+git remote add origin gohiljaydip67@gmail.com:jaydipgohil1/next-technology.git
+git remote add origin gohiljaydip67@gmail.com:jaydipgohil1/next-technology
+
+
+git remote add origin https://github.com/jaydipgohil1/next-technology
+git config --global user.name "jaydipgohil1" 
+git config --global user.email "gohiljaydip67@gmail.com"  
+git init next-technology1
+git clone https://github.com/jaydipgohil1/next-technology1.git
+git@github.com:jaydipgohil1/next-technology.git
+
+git remote set-url origin https://github.com/jaydipgohil1/next-technology1.git
+git push -u origin main
+git remote set-url origin https://github.com/jaydipgohil1/next-technology.git
