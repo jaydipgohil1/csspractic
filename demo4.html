@@ -10,7 +10,62 @@
 </head>
 
 <body>
-    <h1><img class="rotate" src="images/round.png"> Jaydip Gohil !</h1>
+
+    <div class="tooltip">
+        <h1><img id="animated_logo" class="rotate" src="images/round.png"> Jaydip Gohil !</h1>
+        <span class="tooltiptext">Jaydip Gohil</span>
+    </div>
+    <style>
+        .mask1 {
+            -webkit-mask-image: url(https://www.w3schools.com/css/w3logo.png);
+            mask-image: url(https://www.w3schools.com/css/w3logo.png);
+            -webkit-mask-repeat: repeat;
+            mask-repeat: repeat;
+        }
+    </style>
+    <h1>The mask-image Property</h1>
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1">
+        <img src="Landscape-Color.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+    <h3>Original image:</h3>
+    <img src="Landscape-Color.jpg" alt="Cinque Terre" width="600" height="400">
+    <style>
+        :root {
+            background-color: #1e90ff;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+        .mask1 {
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url(Landscape-Color.jpg) no-repeat;
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient (black, transparent);
+        }
+    </style>
+    <h1>The mask-image Property</h1>
+    <h3>A linear gradient as a mask layer:</h3>
+    <div class="mask1">
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia
+            Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.
+        </p>
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia
+            Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.
+        </p>
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia
+            Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.
+        </p>
+    </div>
 </body>
 
-</html>
+</html> 

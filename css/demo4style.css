@@ -19,9 +19,10 @@ h1:hover {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   transition: 1s;
+  
 }
 
-img {
+#animated_logo {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -30,11 +31,33 @@ img {
 .rotate {
   animation: rotation 3s infinite linear;
 }
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
+}
+
+.tooltip {
+  display: block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
