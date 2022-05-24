@@ -12,10 +12,8 @@ body {
     box-sizing: border-box;
     display: inline-flex;
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-
+    outline: 1px solid lightgray;
+    outline-offset: 10px;
 }
 
 .header_circle {
@@ -30,7 +28,6 @@ body {
 .left_header {
     width: fit-content;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     margin: 8px 0px 0px 10px;
 }
@@ -40,7 +37,6 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin: 12px 10px 0px 0px;
-
 }
 
 .main_right {
@@ -61,35 +57,19 @@ div a {
 
 }
 
-
-
 li {
-    display: inline-block;
+    /* display: inline-block;*/
     margin-right: 10px;
-
+    display: inline-flex;
 }
 
 .menu {
-
     font-size: 11px;
     font-weight: normal;
 }
 
-hr {
-    margin-top: 2%;
-    position: -webkit-sticky;
-  position: sticky;
-  top: 50px;
-
-}
-
-.top-right {
-    display: inline-block;
-}
-
-
 p h1 h3 {
-    margin: auto;
+
     opacity: 0.5;
 }
 
@@ -102,22 +82,28 @@ p h1 h3 {
 .item_container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-self: center;
+    width: 100%;
+
 
 }
 
 .item {
 
     height: 270px;
-    width: 18%;
-    display: flexbox;
-    text-align: center;
+    /* width: 18%; */
+    width: 230px;
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
     background-color: rgb(240, 234, 227);
     opacity: 0.5;
     margin: 10px;
+    justify-content: space-between;
     border-radius: 5px;
     border: 1px groove rgb(240, 234, 227);
+    box-sizing: border-box;
+    flex-direction: column;
 
 }
 
@@ -145,4 +131,59 @@ a:hover {
 
 h2 {
     text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .menu li {
+        float: none;
+        width: 100%;
+        display: flex;
+        font-size: x-small;
+    }
+
+    div p {
+        font-size: small;
+    }
+
+    h1,
+    h2 {
+        font-size: large;
+    }
+
+    p,
+    h3 {
+        font-size: medium;
+    }
+
+    .item_container,
+    .header {
+        flex-direction: column;
+    }
+
+    .item {
+        min-width: 200px;
+    }
+
+    .item_container {
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .item_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .item {
+        /* flex-wrap: wrap; */
+        min-width: 200px ;
+    }
+
+    .item_container {
+        align-items: center;
+    }
 }
