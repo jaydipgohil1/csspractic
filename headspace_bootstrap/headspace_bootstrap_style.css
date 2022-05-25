@@ -8,12 +8,13 @@ body {
 }
 
 .header {
-
-    box-sizing: border-box;
     display: inline-flex;
     width: 100%;
     outline: 1px solid lightgray;
-    outline-offset: 10px;
+    outline-offset: 7px;
+    z-index: 1;
+    background-color: white;
+    top: 0;
 }
 
 .header_circle {
@@ -22,21 +23,38 @@ body {
     background-color: coral;
     border-radius: 50%;
     margin-right: 5px;
-    display: inline-block;
+    display: flex;
 }
 
 .left_header {
-    width: fit-content;
     display: flex;
+    width: fit-content;
     align-items: center;
-    margin: 8px 0px 0px 10px;
+    /* margin: 8px 0px 0px 10px; */
 }
 
 .right_sub_header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 12px 10px 0px 0px;
+    margin-top: 21px;
+}
+
+.menu_div {
+    display: flex;
+    justify-content: flex-start;
+
+
+
+}
+
+.menu {
+    font-size: 11px;
+    font-weight: normal;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
 }
 
 .main_right {
@@ -54,7 +72,6 @@ div a {
     color: black;
     opacity: 75%;
     font-weight: bold;
-
 }
 
 li {
@@ -62,18 +79,12 @@ li {
     margin-right: 10px;
     display: inline-flex;
 }
-
-.menu {
-    font-size: 11px;
-    font-weight: normal;
-}
-
 p h1 h3 {
-
     opacity: 0.5;
 }
 
 .main_contain {
+    margin-top: 20px;
     text-align: center;
     opacity: 0.60;
     font-family: Helvetica;
@@ -84,17 +95,13 @@ p h1 h3 {
     justify-content: center;
     justify-self: center;
     width: 100%;
-
-
 }
 
 .item {
 
     height: 270px;
-    /* width: 18%; */
     width: 230px;
     display: flex;
-    /* align-items: center; */
     align-items: center;
     background-color: rgb(240, 234, 227);
     opacity: 0.5;
@@ -132,6 +139,11 @@ a:hover {
 h2 {
     text-align: center;
 }
+.profile_span
+{
+    display: inline;
+    width: fit-content;
+}
 
 @media screen and (max-width: 400px) {
     .menu li {
@@ -139,6 +151,10 @@ h2 {
         width: 100%;
         display: flex;
         font-size: x-small;
+    }
+    ul li{
+        flex-direction: column;
+        /* background-color: aqua; */
     }
 
     div p {
@@ -168,6 +184,13 @@ h2 {
         align-items: center;
 
     }
+
+    ul {
+        /* flex-direction: column; */
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+
+    }
 }
 
 @media screen and (max-width: 645px) {
@@ -180,7 +203,7 @@ h2 {
 @media screen and (max-width: 900px) {
     .item {
         /* flex-wrap: wrap; */
-        min-width: 200px ;
+        min-width: 200px;
     }
 
     .item_container {
